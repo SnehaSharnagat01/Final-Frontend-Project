@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "plain light";
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#loader {
+  height: 100vh;
+  width: 100%;
+  background-color:black;
+  position: fixed;
+  padding-top: 15vh;
+  padding-left: 5.5vw;
+  z-index: 99;
+}
+
+.load {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.load:nth-child(1){
+  padding-left: 3.3vw;
+}
+
+.load h1 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.load h2{
+  font-size: 7vw;
+  padding-left: 2vw;
+  font-weight: 900;
+  animation-timing-function: linear;
+  animation-name: now;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes now {
+  0%{
+    font-family: "plain light";
+    color: white;
+    -webkit-text-stroke: 1px transparent;
+    opacity: 1;
+    font-weight: 100;
+  }
+
+  45%{
+    font-family: "plain light";
+    color: white;
+    -webkit-text-stroke: 1px transparent;
+    opacity: 1;
+    font-weight: 100;
+  }
+
+  50%{
+    font-family: "silk serif";
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    opacity: 0;
+    font-weight: 100;
+  }
+
+  95%{
+    font-family: "silk serif";
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    opacity: 1;
+    font-weight: 100;
+  }
+
+
+
+  100%{
+    font-family: "plain light";
+    color: white;
+    -webkit-text-stroke: 1px transparent;
+    opacity: 1;
+    font-weight: 100;
+  }
+  
+}
+
+
+#timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2vw;
+  width: 16vw;
+}
+
+#timer h4 {
+  font-size: 4vw;
+  font-family: "silk serif";
+  font-weight: 100;
+}
+
+#timer h5 {
+  font-size: 4vw;
+  font-weight: 100;
+  font-family: "silk serif";
+
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #151515;
+
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #151515;
+}
+
